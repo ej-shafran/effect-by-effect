@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "effect-by-effect",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Root package",
+  "scripts": {
+    "spell": "cspell --no-progress --show-suggestions --show-context README.md",
+    "knip": "knip",
+    "knip:fix": "knip --fix --allow-remove-files",
+    "format": "prettier --write .",
+    "format:check": "prettier .",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
+  },
+  "keywords": [],
+  "author": "ej-shafran",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.14.10",
+    "cspell": "^8.10.4",
+    "husky": "^9.0.11",
+    "knip": "^5.26.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.0.6",
+    "typescript": "^5.5.3"
+  },
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
+}

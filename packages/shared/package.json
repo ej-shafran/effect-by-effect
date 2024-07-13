@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@effect-by-effect/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared code between apps",
+  "scripts": {
+    "spell": "cspell --no-progress --show-suggestions --show-context -c ../../cspell.json **/*.{ts,tsx,md}",
+    "knip": "knip",
+    "knip:fix": "knip --fix --allow-remove-files",
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "keywords": [],
+  "author": "ej-shafran",
+  "license": "MIT",
+  "devDependencies": {
+    "@effect-by-effect/eslint-config": "workspace:*",
+    "@effect-by-effect/typescript-config": "workspace:*",
+    "@eslint/js": "^9.7.0",
+    "@types/eslint__js": "^8.42.3",
+    "cspell": "^8.10.4",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "8.0.0-alpha.41"
+  }
+}

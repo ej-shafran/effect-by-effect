@@ -1,0 +1,46 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+jobs:
+  build:
+    name: Continuous Integration
+    runs-on: ubuntu-latest
+    # env:
+    #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+    #  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - name: Install Dependencies
+        run: pnpm install
+      - name: Format
+        run: pnpm exec turbo run format:check
+      - name: Spelling
+        run: pnpm exec turbo run spell
+      - name: Build
+        run: pnpm exec turbo run build
+      - name: Lint
+        run: pnpm exec turbo run lint
+      - name: Knip
+        run: pnpm exec turbo run knip
+
+      # - name: Test
+      #   run: pnpm exec turbo run test

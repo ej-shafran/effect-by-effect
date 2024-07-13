@@ -1,0 +1,41 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "lint": {
+      "outputs": []
+    },
+    "lint:fix": {
+      "outputs": []
+    },
+    "//#format": {
+      "outputs": []
+    },
+    "//#format:check": {
+      "outputs": []
+    },
+    "//#knip": {
+      "outputs": []
+    },
+    "//#knip:fix": {
+      "outputs": []
+    },
+    "spell": {
+      "outputs": []
+    },
+    "//#spell": {
+      "outputs": []
+    },
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["check-types"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false
+    }
+  }
+}

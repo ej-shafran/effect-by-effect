@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@effect-by-effect/typescript-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TypeScript configuration base",
+  "scripts": {},
+  "keywords": [],
+  "author": "ej-shafran",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
