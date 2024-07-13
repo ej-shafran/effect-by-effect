@@ -41,6 +41,8 @@ jobs:
         run: pnpm exec turbo run lint
       - name: Style Lint
         run: pnpm exec turbo run stylelint
+      - name: File Name Lint
+        run: pnpm exec turbo run ls-lint
       - name: Knip
         run: pnpm exec turbo run knip
 
