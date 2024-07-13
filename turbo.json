@@ -8,6 +8,12 @@
     "lint:fix": {
       "outputs": []
     },
+    "stylelint": {
+      "outputs": []
+    },
+    "stylelint:fix": {
+      "outputs": []
+    },
     "//#format": {
       "outputs": []
     },

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@effect-by-effect/stylelint-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ESLint configuration base",
+  "scripts": {},
+  "keywords": [],
+  "author": "ej-shafran",
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
