@@ -8,5 +8,4 @@ export default {
   rules: {
     "selector-max-id": 0,
   },
-  ignorePatterns: "dist",
 };
