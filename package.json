@@ -10,7 +10,7 @@
     "knip": "knip",
     "knip:fix": "knip --fix --allow-remove-files",
     "format": "prettier --write .",
-    "format:check": "prettier .",
+    "format:check": "prettier --check .",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
   },
