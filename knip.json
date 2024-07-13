@@ -4,13 +4,9 @@
     "apps/*": {
       "entry": ["src/main.{js,ts,tsx}"],
       "project": ["**/*.{js,ts,tsx}"]
+    },
+    "configs/stylelint": {
+      "ignoreDependencies": ["stylelint-*"]
     }
-  },
-  "ignoreDependencies": [
-    "@eslint/js",
-    "@types/eslint__js",
-    "eslint",
-    "turbo",
-    "typescript-eslint"
-  ]
+  }
 }

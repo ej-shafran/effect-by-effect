@@ -10,7 +10,9 @@
   "author": "ej-shafran",
   "license": "MIT",
   "devDependencies": {
-    "stylelint": "^16.7.0",
+    "stylelint": "^16.7.0"
+  },
+  "dependencies": {
     "stylelint-config-standard": "^36.0.1"
   }
 }
